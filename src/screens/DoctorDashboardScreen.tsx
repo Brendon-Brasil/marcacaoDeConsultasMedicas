@@ -152,7 +152,6 @@ const DoctorDashboardScreen: React.FC = () => {
                     />
                   </ButtonContainer>
                 )}
-              </ListItem.Content>
             </AppointmentCard>
           ))
         )}
