@@ -135,7 +135,6 @@ const DoctorDashboardScreen: React.FC = () => {
           );
         }
 
-        loadAppointments(); // Recarrega a lista
       }
     } catch (error) {
       console.error('Erro ao atualizar status:', error);
@@ -238,7 +237,6 @@ const DoctorDashboardScreen: React.FC = () => {
                     />
                   </ButtonContainer>
                 )}
-              </ListItem.Content>
             </AppointmentCard>
           ))
         )}
