@@ -237,7 +237,8 @@ const DoctorDashboardScreen: React.FC = () => {
                       buttonStyle={styles.cancelButton}
                     />
                   </ButtonContainer>
-              )}
+                )}
+              </ListItem.Content>
             </AppointmentCard>
           ))
         )}
