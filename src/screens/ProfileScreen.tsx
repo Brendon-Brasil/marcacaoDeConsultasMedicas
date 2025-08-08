@@ -49,6 +49,13 @@ const ProfileScreen: React.FC = () => {
         </ProfileCard>
 
         <Button
+          title="Editar Perfil"
+          onPress={() => navigation.navigate('EditProfile' as any)}
+          containerStyle={styles.button as ViewStyle}
+          buttonStyle={styles.editButton}
+        />
+
+        <Button
           title="Voltar"
           onPress={() => navigation.goBack()}
           containerStyle={styles.button as ViewStyle}
@@ -69,6 +76,10 @@ const ProfileScreen: React.FC = () => {
 const styles = {
   scrollContent: {
     padding: 20,
+  },
+  editButton: {
+    backgroundColor: theme.colors.success,
+    paddingVertical: 12,
   },
   button: {
     marginBottom: 20,

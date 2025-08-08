@@ -103,6 +103,13 @@ const PatientDashboardScreen: React.FC = () => {
           buttonStyle={styles.buttonStyle}
         />
 
+        <Button
+          title="Configurações"
+          onPress={() => navigation.navigate('Settings')}
+          containerStyle={styles.button as ViewStyle}
+          buttonStyle={styles.settingsButton}
+        />
+
         {loading ? (
           <LoadingText>Carregando consultas...</LoadingText>
         ) : appointments.length === 0 ? (
@@ -147,6 +154,10 @@ const PatientDashboardScreen: React.FC = () => {
 const styles = {
   scrollContent: {
     padding: 20,
+  },
+  settingsButton: {
+    backgroundColor: theme.colors.secondary,
+    paddingVertical: 12,
   },
   button: {
     marginBottom: 20,
